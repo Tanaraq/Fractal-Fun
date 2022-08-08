@@ -55,7 +55,7 @@ window.addEventListener('load', function(){
       
       //let's add some dots!
       if(dots){
-        lightness = '70%';
+        lightness = '60%';
         let color = 'hsl('+hue+', 100%, '+lightness+')';
         ctx.fillStyle = color;
         ctx.beginPath();
@@ -138,15 +138,15 @@ window.addEventListener('load', function(){
         branches = 2;
         //if double, no dots:
         dots = false;
-        dotsCheck.disabled=true;
-        dotsCheck.checked=false;
+        moreDots.disabled=true;
+        moreDots.checked=false;
         document.getElementById('dotsLabel').style.textDecoration= 'line-through';
          document.getElementById('dotsLabel').style.color='grey';
       } else {
         double = false;
         branches = 3;
         //if single, dots optional:
-        dotsCheck.disabled = false;
+        moreDots.disabled = false;
         document.getElementById('dotsLabel').style.textDecoration = 'none';
         document.getElementById('dotsLabel').style.color = 'white';
       };
@@ -155,10 +155,10 @@ window.addEventListener('load', function(){
   };
   
   //I wanna make an option to add some dots. I created a variable dots, updated the drawBranch function again, and added a checkbox for input. 
-   const dotsCheck = document.querySelector("input[name=dots]");
+   const moreDots = document.querySelector("input[name=dots]");
   
-   dotsCheck.addEventListener('change', () => {
-      if(dotsCheck.checked) {
+    moreDots.addEventListener('change', () => {
+      if(moreDots.checked) {
         dots = true;
       } else {
         dots = false;
