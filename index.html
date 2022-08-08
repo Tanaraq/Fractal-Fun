@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Fractal Art</title>
+</head>
+
+<body>
+  <canvas id="canvas1"></canvas>
+  <div id="container">
+   <div id="menu">
+    <p>Create a  </p>
+    <button id="randomButton" type="submit">random fractal</button>
+    <p> or use: </p>
+    <button id="controlButton" type="submit">controls</button>
+   </div>
+   <div id="controls">
+    <form action="">
+      <input class='radio' type="radio" name="selector" id="single" value="single" checked>
+      <label for="single">single</label>
+      <input class='radio' type="radio" name="selector" id="double" value="double">
+      <label for="double">double</label>
+      <input type="checkbox" id="dots" name="dots" class="dots">
+      <label for="dots" class="dots" id="dotsLabel">dots</label>
+      <br>
+      <input type="range" name="branches" id="branches" min="2" max="8" step="1"
+      >
+      <label for="branches">number of branches</label>
+      <br>
+      <input type="range" name="spread" id="spread" min="0" max="1.7" step="0.05">
+      <label for="spread">angle of spread</label>
+      <br>
+      <input type="range" name="scale" id="scale" min="0.4" max="0.6" step="0.05">
+      <label for="scale">scaling of branches</label>
+    </form>
+   </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
