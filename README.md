@@ -16,3 +16,6 @@ HTML, CSS and lots of JavaScript
 * writing JS functions with intricate loops
 * working with lots of variables that can be randomized or manually adjusted
 * creating HTML forms with corresponding eventListeners and eventHandler functions
+
+## See this project live at:
+https://fractal-fun.netlify.app
