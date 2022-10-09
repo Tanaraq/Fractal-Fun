@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
  ctx.lineCap = "round";
  
  // EFFECTS
- let size = ( canvas.width > canvas.height? canvas.height*0.3 : canvas.width*0.3);
+ let size = ( canvas.width > canvas.height? canvas.height*0.25 : canvas.width*0.3);
  let maxLevel = 4;
  let branches = 3;
  let sides = 3;
