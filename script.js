@@ -10,7 +10,7 @@ window.addEventListener('load', function(){
  ctx.lineCap = "round";
  
  // EFFECTS
- const size = canvas.width*0.3;
+ let size = ( canvas.width > canvas.height? canvas.height*0.3 : canvas.width*0.3);
  let maxLevel = 4;
  let branches = 3;
  let sides = 3;
@@ -23,6 +23,11 @@ window.addEventListener('load', function(){
  let double = false;
  let dots = false;
  
+ window.addEventListener("orientationchange", function(event) {
+  size = ( canvas.width > canvas.height? canvas.height*0.3 : canvas.width*0.3);
+  location.reload();
+});
+
  //this function will draw 1 branch:
  function drawBranch(level){
   //first: recursion termination to prevent endless loop!:
